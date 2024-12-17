@@ -1,3 +1,4 @@
+
 public class CouresClass {
     String courseName;
     String enrolledStudent;
@@ -18,4 +19,5 @@ public class CouresClass {
     static void setMaxCapacity(int capacity) {
         maxCapacity = capacity;
     }
+
 }
