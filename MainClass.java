@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import MyPackage.*;
+import bankSystem.BankAccount;
 
 public class MainClass {
 
@@ -25,8 +27,14 @@ public class MainClass {
         // String str2 = " I am 21 years old I am a very sweet girl";
         // String concatedString = str1.concat(str2);
         // System.out.print(concatedString.toUpperCase());
-        Circle circle = new Circle(5);
-        System.out.println(circle.area());
-        System.out.println(circle.circumference());
+        // Circle circle = new Circle(5);
+        // System.out.println(circle.area());
+        // System.out.println(circle.circumference());
+        BankAccount holder1 = new BankAccount();
+        System.out.println(holder1.currentBalance());
+        holder1.deposite(7000);
+        holder1.withdraw(400);
+        System.out.println(holder1.currentBalance());
+        holder1.withdraw(8000);
     }
 }

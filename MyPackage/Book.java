@@ -1,3 +1,5 @@
+package MyPackage;
+
 public class Book {
     String title;
     String author;
@@ -17,7 +19,7 @@ public class Book {
         this.author = author;
     }
 
-    Book(int isbn) {
+    public Book(int isbn) {
         this(isbn, "NA", "NA");
     }
 
