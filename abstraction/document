@@ -1,0 +1,6 @@
+Abstraction keyword:
+
+(i) Abstract Class
+(ii) Abstract Method
+
+*If there are Abstract Method in the parent class then the child has two options either create the definition of the abstract method or declares itself an Abstract class.

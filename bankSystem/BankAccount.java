@@ -23,6 +23,20 @@ public class BankAccount {
         }
     }
 
+    // Equals and hashcode method..
+    @Override
+    public boolean equals(Object obj) {
+        // TODO Auto-generated method stub
+        return super.equals(obj);
+    }
+
+    @Override
+    public int hashCode() {
+        // TODO Auto-generated method stub
+        return super.hashCode(); // to use methodes of object class we use super keyword. Here we are returning
+                                 // the resuls from object class hascode method
+    }
+
     public double currentBalance() {
         return balance;
     }
