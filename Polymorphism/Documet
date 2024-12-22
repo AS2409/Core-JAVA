@@ -1,4 +1,24 @@
 Compile time polymorphism: Achieved through method overloading and operator overloading.
 
-Runtime polymorphism: Achieved through method overriding, where a subclass provides specific implementation 
-                      of a method already defined in its superclass.
+Runtime polymorphism: Achieved through method overriding, where a subclass provides specific implementation
+of a method already defined in its superclass.
+
+Method/Costructor Overriding:
+
+- Occurs when a subclass provides a sprcific implementation for a method already defined in its class.
+
+\*Runtime polymorphism : Overriding is a basis for runtime polymorphism, where the method call is determined by the object's typw at runtime.
+
+\*SuperClass reference : An overridden method can be called through a superclass reference holding a subclass object.
+
+\*\* Overriding matlab method already super class mei defined hai pr hm apni class mei same method bnayenge to uss cheej ko @overridden annotaion se btate h ki yeh definition with same sigature super mei bhe h.
+
+**Overridden methods must have the ame name, return type, and parameters as the method in the parent class.
+**@Override annotation is optional but helps to ensure that the method is correctly overridden.
+
+Final Keyword :
+*Final Variable : To create constant variables
+*Final Methods : To prevent method overriding
+\*Final classes : To prevent inheritance.
+
+\*\*Abstract and final can't be together

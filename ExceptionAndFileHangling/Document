@@ -1,0 +1,46 @@
+What is Exception :
+
+- In java an Exception is a disruptive event that occurs during the execution of a program interrupting its normal flow. It's
+  an instance of a problem that arises while th program is running, such as arithmetic errors, null pointer access or resource overflows.
+
+- Exceptions are objects in java that encapsulate information avout an error event, including its type and the state of the program when the error occured.
+
+Try-Catch
+
+\*Try block contains code that is susceptible to exceptions.
+
+\*Catch block follows the try block and handles the exceptions thrown by the try block.
+
+\*When an exception occurs in thr try block the control is transferred to the catch block, where the exception is handled.
+
+\*\*Exception is the parent class of all the exceptions eg. ArithmeticException, IndexOutOfBoundException etc.
+
+Type Of Exception :
+
+1. User defined exception
+2. Built in exception
+   (i) Checked Exception : These are the exceptions that must be either caught or declared in the method (Inko handle krna padega hme.).
+   (ii) Unchecked exception : These are the exceptions that are not need to be explicitly handled (jaruri nhi h handle krna hme).
+
+\*\* There are two ways to handle exception i.e try-catch and throws (see in ThrowAndThrows).
+
+Throw and Throws :
+
+1. throws Keyword
+
+- Is used to declare that i can throw the exception.
+- Declares that a method may throw one of more exceptions.
+- Used in the method signature to indicate that the method might throw exceptions of specified types
+- A method declared with throws requires the calling method to handle or further declare the exception
+
+2. throw Keyword
+
+- Is used to actually throw the exception.
+
+Finally Block 
+
+finally :
+
+  *Executes code after the try-catch, used mainly for cleanup operations.
+  *Always runs regardless of whether an exception is thrown or caught in the try-catch.
+  *Ideal for closing resources like files or database connections to prevent resourece leak.
