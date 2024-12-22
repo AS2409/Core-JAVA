@@ -1,4 +1,4 @@
-package MyPackage;
+package designProblems.MyPackage;
 
 public class Book {
     String title;

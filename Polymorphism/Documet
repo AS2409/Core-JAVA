@@ -1,0 +1,4 @@
+Compile time polymorphism: Achieved through method overloading and operator overloading.
+
+Runtime polymorphism: Achieved through method overriding, where a subclass provides specific implementation 
+                      of a method already defined in its superclass.

@@ -1,6 +1,7 @@
 import java.util.Scanner;
-import MyPackage.*;
-import bankSystem.BankAccount;
+
+import designProblems.MyPackage.*;
+import designProblems.bankSystem.BankAccount;
 
 public class MainClass {
 

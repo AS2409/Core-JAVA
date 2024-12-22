@@ -1,4 +1,4 @@
-package bankSystem;
+package designProblems.bankSystem;
 
 public class BankAccount {
     private String accountNumber;
