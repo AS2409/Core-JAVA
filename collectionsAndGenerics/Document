@@ -1,0 +1,7 @@
+1> Variable Arguments
+
+- Java's varargs allow methods to accept any number of arguments.
+- Declare using an ellipsis (...) e.g, void funt(int... nums) // now funt can take any number of integer as argument
+- Internal Handling : Treated as arrays, e.g., int... nums is int[] nums.
+- Placement : must be the last in the method's parameters.
+- Introduced in : Java 5.

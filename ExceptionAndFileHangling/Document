@@ -37,10 +37,33 @@ Throw and Throws :
 
 - Is used to actually throw the exception.
 
-Finally Block 
+Finally Block
 
 finally :
 
-  *Executes code after the try-catch, used mainly for cleanup operations.
-  *Always runs regardless of whether an exception is thrown or caught in the try-catch.
-  *Ideal for closing resources like files or database connections to prevent resourece leak.
+*Executes code after the try-catch, used mainly for cleanup operations.
+*Always runs regardless of whether an exception is thrown or caught in the try-catch.
+\*Ideal for closing resources like files or database connections to prevent resourece leak.
+
+\*\* We can also create our own exception class by just extending "Exception" class.
+
+\*FileWriter class :
+
+- It is the class that is used to write in a specific file.
+
+* Whatever the file name is given, the file with that name gets created.
+
+- The file name is passed when the object is created. eg. FileWriter writer = new FileWriter(<filensme>);
+
+* writer.write("write anything to the given file).
+* try() -> try with bracket => try with resource : means when the try catch block gets finished, java
+  automatically close the resoure if we do not use this syntax then it is our responsibility to close the resource.
+  see example in polymorphism -> referenceAndObject -> MainClass
+
+FileReader Class :
+
+- Simillarly the FileWriter Class the FileReader Class works.
+- It is used to read from the file.
+- Syntax is similar just Class name is different.
+- read() method is used to read the file;
+- It reads every character in a number form (eg. a = 96 then it will print 96. to write a we typecast it into character).

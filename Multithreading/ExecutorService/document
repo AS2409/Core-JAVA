@@ -1,0 +1,6 @@
+Purpose :
+ ExecutorService is a framework provided by the java concurrency API to manage and execute submitted tasks without the need to manually manage thread life cylces.
+
+Thread Pool Management : 
+
+ExecutorService efficiently reuses a fixed pool of threads to execute tasks, thereby improving pefrormance by reducing the overhead of thread creation, expecially for short-lived asynchronous tasks.

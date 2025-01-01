@@ -1,0 +1,53 @@
+States of thread :
+
+            waiting/sleeping/blocking
+                 |   (yield)  |
+                 |     <--    |
+       new --> runnable --> running --> terminated (dead thread)
+
+- new : thread is created but not started.
+- Runnable : Thread is ready for running.
+- Yield : It is a method that we can execute in our thread if the important work has been executed and
+  now the thread can wait to execute rest of the task.
+- Running : Thread is actively executing task.
+- Blocking/waiting : Thread is alive but not active because it is waiting for resources/ other thread.
+- Terminated : Thread has finished / stopped running.
+
+Thread Priority :
+
+- Priority level : Java has priority level from 1(lowest) to 10(highest) with default value of 5.
+- Infulence and execution : A thread priority suggest's the importance of a thread to the scheduler, though it
+  does't gurantee the order of execution.eg t1.setPriority(Thread.MAX_PRIORITY)
+
+* Set and get priority : Set the priority of the thread by calling setPriority() ans can get the priority of the
+  thread by calling getPriority().
+
+Join Method :
+
+- Purpose of join : agr thread t1 se join method call kiya thread t2 pe (t2.join()) toh is line ke baad ka
+  task(t1 mein) tbhi execute hoyega jb t2 apna poora kaam khatam krke wapas t1 mein nhi aa jata
+
+* Synchronization of thread : Join helps in synchronizing multiple threads, ensuring that the thread completes its execution before the next steps in the calling(thread from where the join is called) thread proceed.
+* Overloaded versions : join comes in three versions :
+  _ join() : waits indefinitely until the thread on which its is called finished.
+  _ join(long milisec) : Wait for the thread to die for a specified milisec time. \* join(long milisec, int nanosec) : wait for the thread to die for a specified milisec plus nanosec
+
+Synchronize Keyword :
+
+- Mutual Exclusion : The synchronize keyword in java ensures that only one thread can execute a block of code at a time, providing mutual exclusion and preventing race conditions. (eg. ek time pe QR scan krke aur ATM machine se paise nikalne ka try kiya toh ho skta h ki paise available balance se jada kt jaye toh isliye Synchronize keyword important hai jisse ki jo thread execute ho rha h wo jb tk poora execute na ho jaye tb tk dusre thread ko wait krna hoga).
+
+- Object Lock: When a thread enters a synchronized block or method, it acquires a lock on the object or class, depending on whether the method is an instance method or a static method.
+
+- Visibility : It ensures that the changes made by one thread to shaed data are visible to other threads as well.
+
+Thread Communication :
+
+1. sleep(long milisec) : Causes the currentyl exectuing thread to sleep (temporarily case execution) for the specified number of miliseconds.
+
+2. yield() : Causes the currently executing thread to pause and allow other threads to execute. It's a way of suggesting that other threads of the same priority can run.
+
+3. wait() : Causes the current thread to wait until another thread invokes the notify() or notifyAll() method for theis object. It releases the lock held by this thread.
+
+4. notify() : Wakes up a single thread that is waiting on the object's monitor. If any threads are waiting, one is chosen to be awakened.
+
+5. notifyAll() : Wakes up all threads that are wiating on the object's monitor.
